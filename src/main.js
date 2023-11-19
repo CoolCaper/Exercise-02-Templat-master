@@ -1,6 +1,6 @@
 // Exercise 02: RNGolf
-// Name:
-// Date:
+// Name: Shauna
+// Date: 10/27/2023
 
 'use strict'
 
@@ -8,7 +8,13 @@ let config = {
     type: Phaser.AUTO,
     width: 640,
     height: 960,
-    scene: [ Play ]
+    scene: [ Play ],
+    physics: {
+        default: 'arcade',
+        arcade: {
+            debug: true
+        }
+    }
 }
 
 let game = new Phaser.Game(config)
